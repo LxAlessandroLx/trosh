@@ -24,6 +24,6 @@ function laser:update(dt)
 end
 
 function laser:draw()
-	love.graphics.setColor(getrainbowcolor(math.random(), 400))
+	love.graphics.setColor(getrainbowcolor(math.random(), 400/255))
 	love.graphics.rectangle("fill", self.x*scale, self.y*scale, 100*scale*self.i, scale*2)
 end
